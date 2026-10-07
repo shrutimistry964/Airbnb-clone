@@ -1,0 +1,30 @@
+.grid { display: grid; grid-template-columns: 340px 1fr; gap: 48px; align-items: start; }
+.card {
+  border: 1px solid var(--card-border); border-radius: 20px; box-shadow: var(--shadow-card); display: grid; grid-template-columns: 1fr 100px;
+  align-items: center; padding: 30px 24px;
+}
+.identity { text-align: center; }
+.avatarWrap { position: relative; width: 88px; height: 88px; margin: 0 auto 12px; }
+.avatarWrap img { width: 88px; height: 88px; border-radius: 50%; object-fit: cover; }
+.verified { position: absolute; right: 0; bottom: 4px; width: 28px; height: 28px; border-radius: 50%; background: var(--rausch); display: flex; align-items: center; justify-content: center; border: 2px solid #fff; }
+.verified svg { width: 15px; height: 15px; color: #fff; }
+.name { font-size: 26px; font-weight: 500; }
+.role { font-size: 13px; margin-top: 4px; }
+.stats { border-left: 1px solid var(--line-soft); padding-left: 20px; }
+.stat { padding: 10px 0; }
+.stat + .stat { border-top: 1px solid var(--line-soft); }
+.statValue { font-size: 20px; font-weight: 500; }
+.statLabel { font-size: 12px; }
+.facts { margin-top: 22px; display: flex; flex-direction: column; gap: 14px; }
+.fact { display: flex; align-items: center; gap: 14px; font-size: 15px; }
+.factIcon { width: 24px; height: 24px; color: var(--ink); }
+.subTitle { font-size: 18px; font-weight: 500; margin-bottom: 16px; }
+.cohosts { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px 8px; margin-bottom: 30px; }
+.cohost { display: flex; align-items: center; gap: 10px; font-size: 14px; }
+.cohost img, .initial { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; }
+.initial { display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; }
+.details { font-size: 15px; line-height: 1.6; }
+.message { background: var(--grey200); border: none; border-radius: 8px; padding: 14px 24px; font-size: 15px; font-weight: 500; margin-top: 18px; }
+.message:hover { background: var(--grey300); }
+.warning { display: flex; gap: 10px; align-items: flex-start; font-size: 12px; color: var(--muted2); margin-top: 30px; }
+.warningIcon { width: 24px; height: 24px; flex-shrink: 0; }

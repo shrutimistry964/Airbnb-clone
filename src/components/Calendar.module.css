@@ -1,0 +1,22 @@
+.heading { font-size: 22px; font-weight: 500; }
+.range { font-size: 14px; color: var(--muted2); margin-top: 6px; margin-bottom: 22px; }
+.months { display: grid; grid-template-columns: 1fr 1fr; gap: 0 56px; position: relative; }
+.monthTitle { font-size: 16px; font-weight: 500; text-align: center; margin-bottom: 18px; }
+.arrows { position: absolute; top: -4px; display: flex; justify-content: space-between; width: 100%; }
+.arrows button { width: 32px; height: 32px; border: none; background: none; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; }
+.arrows button:hover { background: var(--grey200); }
+.arrowIcon { width: 12px; height: 12px; }
+.weekdays { display: grid; grid-template-columns: repeat(7, 1fr); margin-bottom: 6px; }
+.weekdays span { text-align: center; font-size: 12px; font-weight: 500; color: var(--ink); }
+.days { display: grid; grid-template-columns: repeat(7, 1fr); }
+.day { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; font-size: 14px; position: relative; border-radius: 50%; }
+.blank { visibility: hidden; }
+.disabled { color: var(--line); text-decoration: line-through; }
+.inRange { background: var(--grey200); border-radius: 0; }
+.checkIn, .checkOut { background: var(--ink); color: #fff; border-radius: 50%; }
+.checkIn:before, .checkOut:before { content: ""; position: absolute; top: 0; bottom: 0; width: 50%; background: var(--grey200); z-index: -1; }
+.checkIn:before { right: 0; }
+.checkOut:before { left: 0; }
+.footer { display: flex; justify-content: space-between; align-items: center; margin-top: 18px; }
+.keyboard { width: 30px; height: 22px; border: 1px solid var(--line-strong); border-radius: 4px; display: inline-flex; align-items: center; justify-content: center; }
+.clear { background: none; border: none; font-weight: 500; text-decoration: underline; font-size: 14px; }

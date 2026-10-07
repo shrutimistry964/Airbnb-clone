@@ -1,0 +1,5 @@
+.toast {
+  position: fixed; left: 50%; bottom: 32px; transform: translate(-50%, 20px); background: var(--ink); color: #fff; padding: 14px 22px; border-radius: 8px;
+  font-size: 14px; font-weight: 500; opacity: 0; pointer-events: none; transition: opacity var(--t-toast), transform var(--t-toast); z-index: 200;
+}
+.toast.shown { opacity: 1; transform: translate(-50%); }

@@ -1,0 +1,986 @@
+{
+ "rooms": [
+  {
+   "name": "Living room 1",
+   "amenities": [
+    "Sofa",
+    "Air conditioning",
+    "Ceiling fan",
+    "TV"
+   ],
+   "photos": [
+    {
+     "idx": 0,
+     "src": "/assets/images/a9831aeb-f441-44f5-a38f-4cf54e3f0fcf.jpeg"
+    },
+    {
+     "idx": 1,
+     "src": "/assets/images/a45feaa2-b607-4092-83ac-5fd4b2894959.jpeg"
+    },
+    {
+     "idx": 2,
+     "src": "/assets/images/f1da1c3d-0d10-481e-9b63-c71f9073f30b.jpeg"
+    }
+   ],
+   "rows": [
+    1
+   ]
+  },
+  {
+   "name": "Living room 2",
+   "amenities": [
+    "Ceiling fan",
+    "Hot tub"
+   ],
+   "photos": [
+    {
+     "idx": 3,
+     "src": "/assets/images/090d8b0b-b539-42c0-84f8-e1fb0cdf9a93.jpeg"
+    },
+    {
+     "idx": 4,
+     "src": "/assets/images/9be71047-fc52-438a-9270-75cb470f6752.jpeg"
+    },
+    {
+     "idx": 5,
+     "src": "/assets/images/f6de1663-4e9c-4414-b63b-29a154a92ee1.jpeg"
+    },
+    {
+     "idx": 6,
+     "src": "/assets/images/2367476f-11c4-4a14-a7c6-267be62c1d59.jpeg"
+    },
+    {
+     "idx": 7,
+     "src": "/assets/images/34529829-a971-44d3-ac2f-90ea3678a34d.jpeg"
+    },
+    {
+     "idx": 8,
+     "src": "/assets/images/153aa732-4935-48b8-a6fe-b469b6af5efc.jpeg"
+    },
+    {
+     "idx": 9,
+     "src": "/assets/images/3c6e6809-1bb1-47a6-8e24-aff593e1c28f.jpeg"
+    }
+   ],
+   "rows": [
+    1,
+    2,
+    1,
+    2
+   ]
+  },
+  {
+   "name": "Full kitchen",
+   "amenities": [
+    "Freezer",
+    "Fridge",
+    "Blender",
+    "Cooker",
+    "Cooking basics",
+    "Kettle",
+    "Microwave",
+    "Toaster",
+    "Wine glasses",
+    "Coffee",
+    "Crockery and cutlery"
+   ],
+   "photos": [
+    {
+     "idx": 10,
+     "src": "/assets/images/56c44812-52c0-4481-90d8-101ec1f34c7a.jpeg"
+    },
+    {
+     "idx": 11,
+     "src": "/assets/images/ddc853d7-e658-405c-bedc-8f31106c447e.jpeg"
+    }
+   ],
+   "rows": []
+  },
+  {
+   "name": "Bedroom",
+   "amenities": [
+    "Double bed",
+    "Air conditioning",
+    "Bed linen",
+    "Ceiling fan",
+    "Clothes storage",
+    "Cot",
+    "Hangers",
+    "Iron",
+    "Room-darkening blinds",
+    "Cleaning available during stay",
+    "Cleaning products",
+    "Long-term stays allowed",
+    "Private entrance",
+    "Wifi"
+   ],
+   "photos": [
+    {
+     "idx": 12,
+     "src": "/assets/images/67c61c6f-6260-4809-9510-0360e58a345d.jpeg"
+    },
+    {
+     "idx": 13,
+     "src": "/assets/images/1c827136-4a85-4fe0-8e69-3fd8ea19bb17.jpeg"
+    },
+    {
+     "idx": 14,
+     "src": "/assets/images/0622ab42-b851-4d55-9d9f-df3143bc5909.jpeg"
+    },
+    {
+     "idx": 15,
+     "src": "/assets/images/a74e3c0b-3188-4442-9146-1cd4d6ea45df.jpeg"
+    },
+    {
+     "idx": 16,
+     "src": "/assets/images/48a8ffbc-fbf7-4f84-bc29-ee400da3f08b.jpeg"
+    },
+    {
+     "idx": 17,
+     "src": "/assets/images/3cf31697-f3f3-4c60-82c4-029acb119ae4.jpeg"
+    }
+   ],
+   "rows": [
+    1,
+    2,
+    1
+   ]
+  },
+  {
+   "name": "Full bathroom",
+   "amenities": [
+    "Hairdryer",
+    "Hot water",
+    "Shampoo",
+    "Shower gel"
+   ],
+   "photos": [
+    {
+     "idx": 18,
+     "src": "/assets/images/97c78f8a-5090-4663-aebc-ba4e13b47092.jpeg"
+    }
+   ],
+   "rows": []
+  },
+  {
+   "name": "Gym",
+   "amenities": [
+    "Air conditioning",
+    "Gym",
+    "Exercise equipment",
+    "Ceiling fan"
+   ],
+   "photos": [
+    {
+     "idx": 19,
+     "src": "/assets/images/9aa8e65f-94ac-4ba0-9a10-9ec91e536d22.jpeg"
+    },
+    {
+     "idx": 20,
+     "src": "/assets/images/246bd88d-4dd6-4117-a401-02a36ebfcf16.jpeg"
+    },
+    {
+     "idx": 21,
+     "src": "/assets/images/4fede77d-7a71-446f-89e3-263af937f3fa.jpeg"
+    },
+    {
+     "idx": 22,
+     "src": "/assets/images/79f59adb-5a5f-4d6c-8109-1f01f4ca0d03.jpeg"
+    },
+    {
+     "idx": 23,
+     "src": "/assets/images/f19d8c0a-1d88-42a4-9218-686d4f0db7e4.jpeg"
+    }
+   ],
+   "rows": [
+    1,
+    2
+   ]
+  },
+  {
+   "name": "Exterior",
+   "amenities": [],
+   "photos": [
+    {
+     "idx": 24,
+     "src": "/assets/images/23ea6621-6f74-4baa-acea-2fd03e312b41.jpeg"
+    },
+    {
+     "idx": 25,
+     "src": "/assets/images/5adfdf3e-d497-4efc-ab8c-fc559dab311e.jpeg"
+    },
+    {
+     "idx": 26,
+     "src": "/assets/images/608748cd-6ee7-4a71-88a2-ba79d3ddba5a.jpeg"
+    },
+    {
+     "idx": 27,
+     "src": "/assets/images/5b856fde-a393-41bf-b373-c9d02e64221f.jpeg"
+    },
+    {
+     "idx": 28,
+     "src": "/assets/images/c904e1ab-a39d-4ef0-bdea-8c0bd16b9e3d.jpeg"
+    },
+    {
+     "idx": 29,
+     "src": "/assets/images/42befad7-fb29-473d-91db-b03e7a544d1d.jpeg"
+    }
+   ],
+   "rows": [
+    1,
+    2,
+    1
+   ]
+  },
+  {
+   "name": "Pool",
+   "amenities": [
+    "Pool"
+   ],
+   "photos": [
+    {
+     "idx": 30,
+     "src": "/assets/images/fc02f48f-a937-42c5-895d-f9cc3113d6ca.jpeg"
+    },
+    {
+     "idx": 31,
+     "src": "/assets/images/929545d3-e241-46c0-8a70-c24531ce7b54.jpeg"
+    },
+    {
+     "idx": 32,
+     "src": "/assets/images/8eb65a8b-e795-4870-b141-6f63b1be24ae.jpeg"
+    }
+   ],
+   "rows": [
+    1
+   ]
+  },
+  {
+   "name": "Additional photos",
+   "amenities": [],
+   "photos": [
+    {
+     "idx": 33,
+     "src": "/assets/images/70325367-cbae-4993-b560-18cd3f6edd53.jpeg"
+    },
+    {
+     "idx": 34,
+     "src": "/assets/images/cc7a56bd-242c-498a-9aef-0cffac619e54.jpeg"
+    },
+    {
+     "idx": 35,
+     "src": "/assets/images/30ad93b2-293f-494d-b645-626303c6cb93.jpeg"
+    },
+    {
+     "idx": 36,
+     "src": "/assets/images/9642a60d-e9de-4e1a-89c2-9ebd230f4a74.jpeg"
+    },
+    {
+     "idx": 37,
+     "src": "/assets/images/b6599f26-d65c-4df0-baf2-ef18c82a86a3.jpeg"
+    },
+    {
+     "idx": 38,
+     "src": "/assets/images/dc01fd46-b119-48d3-a43b-f6c093e26eca.jpeg"
+    },
+    {
+     "idx": 39,
+     "src": "/assets/images/fe37b80e-da8a-4225-b27b-dfbb5d763c01.jpeg"
+    },
+    {
+     "idx": 40,
+     "src": "/assets/images/3c90338e-86b4-423f-aae1-279e0ccc3a18.jpeg"
+    },
+    {
+     "idx": 41,
+     "src": "/assets/images/862d936c-0f34-4e50-af87-b519e2781d19.jpeg"
+    },
+    {
+     "idx": 42,
+     "src": "/assets/images/79addceb-8c2d-419b-80ff-e29af426a94c.jpeg"
+    }
+   ],
+   "rows": [
+    1,
+    2,
+    1,
+    2,
+    1,
+    2
+   ]
+  }
+ ],
+ "thumbs": [
+  [
+   "Living room 1",
+   "/assets/images/a9831aeb-f441-44f5-a38f-4cf54e3f0fcf.jpeg"
+  ],
+  [
+   "Living room 2",
+   "/assets/images/090d8b0b-b539-42c0-84f8-e1fb0cdf9a93.jpeg"
+  ],
+  [
+   "Full kitchen",
+   "/assets/images/56c44812-52c0-4481-90d8-101ec1f34c7a.jpeg"
+  ],
+  [
+   "Bedroom",
+   "/assets/images/67c61c6f-6260-4809-9510-0360e58a345d.jpeg"
+  ],
+  [
+   "Full bathroom",
+   "/assets/images/97c78f8a-5090-4663-aebc-ba4e13b47092.jpeg"
+  ],
+  [
+   "Gym",
+   "/assets/images/9aa8e65f-94ac-4ba0-9a10-9ec91e536d22.jpeg"
+  ],
+  [
+   "Exterior",
+   "/assets/images/23ea6621-6f74-4baa-acea-2fd03e312b41.jpeg"
+  ],
+  [
+   "Pool",
+   "/assets/images/fc02f48f-a937-42c5-895d-f9cc3113d6ca.jpeg"
+  ],
+  [
+   "Additional photos",
+   "/assets/images/70325367-cbae-4993-b560-18cd3f6edd53.jpeg"
+  ]
+ ],
+ "groups": [
+  {
+   "title": "Bathroom",
+   "items": [
+    {
+     "icon": "hairdryer",
+     "label": "Hairdryer",
+     "unavailable": false
+    },
+    {
+     "icon": "cleaningProducts",
+     "label": "Cleaning products",
+     "unavailable": false
+    },
+    {
+     "icon": "shampoo",
+     "label": "Shampoo",
+     "unavailable": false
+    },
+    {
+     "icon": "hotWater",
+     "label": "Hot water",
+     "unavailable": false
+    },
+    {
+     "icon": "showerGel",
+     "label": "Shower gel",
+     "unavailable": false
+    }
+   ]
+  },
+  {
+   "title": "Bedroom and laundry",
+   "items": [
+    {
+     "icon": "washer",
+     "label": "Washing machine",
+     "unavailable": false
+    },
+    {
+     "icon": "hangers",
+     "label": "Hangers",
+     "unavailable": false
+    },
+    {
+     "icon": "bedLinen",
+     "label": "Bed linen",
+     "unavailable": false
+    },
+    {
+     "icon": "blinds",
+     "label": "Room-darkening blinds",
+     "unavailable": false
+    },
+    {
+     "icon": "iron",
+     "label": "Iron",
+     "unavailable": false
+    },
+    {
+     "icon": "wardrobe",
+     "label": "Clothes storage",
+     "unavailable": false
+    },
+    {
+     "icon": "cot",
+     "label": "Cot",
+     "unavailable": false
+    }
+   ]
+  },
+  {
+   "title": "Entertainment",
+   "items": [
+    {
+     "icon": "tv",
+     "label": "TV",
+     "unavailable": false
+    }
+   ]
+  },
+  {
+   "title": "Family",
+   "items": [
+    {
+     "icon": "cot",
+     "label": "Cot",
+     "unavailable": false
+    }
+   ]
+  },
+  {
+   "title": "Heating and cooling",
+   "items": [
+    {
+     "icon": "ac",
+     "label": "Air conditioning",
+     "unavailable": false
+    },
+    {
+     "icon": "fan",
+     "label": "Ceiling fan",
+     "unavailable": false
+    }
+   ]
+  },
+  {
+   "title": "Home safety",
+   "items": [
+    {
+     "icon": "camera",
+     "label": "Exterior security cameras on property",
+     "unavailable": false
+    },
+    {
+     "icon": "coAlarm",
+     "label": "Carbon monoxide alarm",
+     "unavailable": true
+    },
+    {
+     "icon": "smokeAlarm",
+     "label": "Smoke alarm",
+     "unavailable": true
+    }
+   ]
+  },
+  {
+   "title": "Internet and office",
+   "items": [
+    {
+     "icon": "wifi",
+     "label": "Wifi",
+     "unavailable": false
+    },
+    {
+     "icon": "workspace",
+     "label": "Dedicated workspace",
+     "unavailable": false
+    }
+   ]
+  },
+  {
+   "title": "Kitchen and dining",
+   "items": [
+    {
+     "icon": "kitchen",
+     "label": "Kitchen",
+     "unavailable": false
+    },
+    {
+     "icon": "fridge",
+     "label": "Fridge",
+     "unavailable": false
+    },
+    {
+     "icon": "fridge",
+     "label": "Freezer",
+     "unavailable": false
+    },
+    {
+     "icon": "microwave",
+     "label": "Microwave",
+     "unavailable": false
+    },
+    {
+     "icon": "kitchen",
+     "label": "Cooking basics",
+     "unavailable": false
+    },
+    {
+     "icon": "cutlery",
+     "label": "Crockery and cutlery",
+     "unavailable": false
+    },
+    {
+     "icon": "kettle",
+     "label": "Kettle",
+     "unavailable": false
+    },
+    {
+     "icon": "coffee",
+     "label": "Coffee",
+     "unavailable": false
+    },
+    {
+     "icon": "wine",
+     "label": "Wine glasses",
+     "unavailable": false
+    },
+    {
+     "icon": "toaster",
+     "label": "Toaster",
+     "unavailable": false
+    },
+    {
+     "icon": "blender",
+     "label": "Blender",
+     "unavailable": false
+    },
+    {
+     "icon": "cooker",
+     "label": "Cooker",
+     "unavailable": false
+    }
+   ]
+  },
+  {
+   "title": "Location features",
+   "items": [
+    {
+     "icon": "entrance",
+     "label": "Private entrance",
+     "unavailable": false
+    }
+   ]
+  },
+  {
+   "title": "Outdoor",
+   "items": [
+    {
+     "icon": "patio",
+     "label": "Patio or balcony",
+     "unavailable": false
+    },
+    {
+     "icon": "outdoorDining",
+     "label": "Outdoor dining area",
+     "unavailable": false
+    }
+   ]
+  },
+  {
+   "title": "Parking and facilities",
+   "items": [
+    {
+     "icon": "parking",
+     "label": "Free parking on premises",
+     "unavailable": false
+    },
+    {
+     "icon": "pool",
+     "label": "Pool",
+     "unavailable": false
+    },
+    {
+     "icon": "hotTub",
+     "label": "Hot tub",
+     "unavailable": false
+    },
+    {
+     "icon": "gym",
+     "label": "Gym",
+     "unavailable": false
+    }
+   ]
+  },
+  {
+   "title": "Services",
+   "items": [
+    {
+     "icon": "pets",
+     "label": "Pets allowed",
+     "unavailable": false
+    },
+    {
+     "icon": "spray",
+     "label": "Cleaning available during stay",
+     "unavailable": false
+    },
+    {
+     "icon": "longTerm",
+     "label": "Long-term stays allowed",
+     "unavailable": false
+    },
+    {
+     "icon": "door",
+     "label": "Self check-in",
+     "unavailable": false
+    }
+   ]
+  }
+ ],
+ "top": [
+  {
+   "icon": "kitchen",
+   "label": "Kitchen",
+   "unavailable": false
+  },
+  {
+   "icon": "wifi",
+   "label": "Wifi",
+   "unavailable": false
+  },
+  {
+   "icon": "workspace",
+   "label": "Dedicated workspace",
+   "unavailable": false
+  },
+  {
+   "icon": "parking",
+   "label": "Free parking on premises",
+   "unavailable": false
+  },
+  {
+   "icon": "pool",
+   "label": "Pool",
+   "unavailable": false
+  },
+  {
+   "icon": "hotTub",
+   "label": "Hot tub",
+   "unavailable": false
+  },
+  {
+   "icon": "pets",
+   "label": "Pets allowed",
+   "unavailable": false
+  },
+  {
+   "icon": "camera",
+   "label": "Exterior security cameras on property",
+   "unavailable": false
+  },
+  {
+   "icon": "coAlarm",
+   "label": "Carbon monoxide alarm",
+   "unavailable": true
+  },
+  {
+   "icon": "smokeAlarm",
+   "label": "Smoke alarm",
+   "unavailable": true
+  }
+ ],
+ "reviews": [
+  {
+   "name": "Amit",
+   "tenure": "2 months on Airbnb",
+   "date": "1 week ago",
+   "text": "Very helpful and responsive team. Safe and peaceful stay. loved everything about the property.",
+   "avatar": null,
+   "initial": {
+    "bg": "rgb(247, 237, 226)",
+    "color": "rgb(193, 133, 42)",
+    "letter": "A"
+   },
+   "clamped": false
+  },
+  {
+   "name": "Aheesh",
+   "tenure": "3 years on Airbnb",
+   "date": "2 weeks ago",
+   "text": "We had a wonderful stay. The apartment was clean, comfortable, and exactly as shown in the photos. The host was very responsive and helpful throughout our stay. We would definitely recommend this place and would love to stay here again.",
+   "avatar": "/assets/images/avatars/rev1.jpeg",
+   "initial": null,
+   "clamped": true
+  },
+  {
+   "name": "Samiksha",
+   "tenure": "8 months on Airbnb",
+   "date": "May 2026",
+   "text": "the host nitish was really great help",
+   "avatar": "/assets/images/avatars/rev2.jpeg",
+   "initial": null,
+   "clamped": false
+  },
+  {
+   "name": "Vedant",
+   "tenure": "4 years on Airbnb",
+   "date": "May 2026",
+   "text": "We had an amazing stay at this property in Goa! The entire home was spotless and exceptionally well-maintained, making us feel comfortable from the moment we arrived. The cleanliness standards were truly impressive, with every corner of the house looking fresh and pristine.\nThe highlight of our stay was definitely the jacuzzi. It was clean, well-kept, and the perfect place to relax after a day of exploring Goa. It added a luxurious touch to our vacation and made our experience even more memorable.\nThe property was exactly as described, well-equipped, and offered a peaceful atmosphere. We would highly recommend this place to anyone looking for a comfortable, clean, and relaxing stay in Goa. Looking forward to visiting again!",
+   "avatar": null,
+   "initial": {
+    "bg": "rgb(239, 234, 247)",
+    "color": "rgb(139, 111, 196)",
+    "letter": "V"
+   },
+   "clamped": true
+  },
+  {
+   "name": "Vaibhav S",
+   "tenure": "3 years on Airbnb",
+   "date": "May 2026",
+   "text": "Great great experience living out there , can't expect more , will always look for it in the future and will recommend my friends too.",
+   "avatar": "/assets/images/avatars/rev3.jpeg",
+   "initial": null,
+   "clamped": false
+  },
+  {
+   "name": "Mohd",
+   "tenure": "5 years on Airbnb",
+   "date": "May 2026",
+   "text": "Great place. Exactly as described in the listing.",
+   "avatar": "/assets/images/avatars/rev4.jpeg",
+   "initial": null,
+   "clamped": false
+  }
+ ],
+ "similar": [
+  [
+   "/assets/images/similar/s1.jpeg",
+   "Beautiful Studio with a view to die for",
+   "₹23,600 ",
+   "4.91"
+  ],
+  [
+   "/assets/images/similar/s2.jpeg",
+   "NAQAB - 1bhk with private pool",
+   "₹42,218 ",
+   "4.95"
+  ],
+  [
+   "/assets/images/similar/s3.jpeg",
+   "Greentique Luxury Flat with plunge pool, Calangute",
+   "₹44,506 ",
+   "4.94"
+  ],
+  [
+   "/assets/images/similar/s4.jpeg",
+   "The Tropical Studio | 5 mins to Beach",
+   "₹22,824 ",
+   "4.96"
+  ],
+  [
+   "/assets/images/similar/s5.jpeg",
+   "Luxury Casa Bella 1BHK with plunge pool, Calangute",
+   "₹39,942 ",
+   "4.95"
+  ],
+  [
+   "/assets/images/similar/s6.jpeg",
+   "Kanso by Earthen Window | Jacuzzi | Terrace | Pool",
+   "₹45,648 ",
+   "5.0"
+  ],
+  [
+   "/assets/images/similar/s2.jpeg",
+   "Luxury Apt | Private Pool | 6 Mins from Beach",
+   "₹48,786 ",
+   "4.93"
+  ],
+  [
+   "/assets/images/similar/s4.jpeg",
+   "Serendipity Cottage - Calm Stay in Calangute-Baga.",
+   "₹22,824 ",
+   "4.92"
+  ]
+ ],
+ "cohosts": [
+  [
+   "/assets/images/avatars/co1.jpg",
+   "",
+   "",
+   "",
+   "Sharath"
+  ],
+  [
+   "/assets/images/avatars/co2.jpg",
+   "",
+   "",
+   "",
+   "Aman Dev Pahwa"
+  ],
+  [
+   "/assets/images/avatars/co3.jpg",
+   "",
+   "",
+   "",
+   "Maria Karen Priyanka"
+  ],
+  [
+   "/assets/images/avatars/rev5.jpeg",
+   "",
+   "",
+   "",
+   "Simran"
+  ],
+  [
+   "/assets/images/avatars/rev1.jpeg",
+   "",
+   "",
+   "",
+   "Pallavi"
+  ],
+  [
+   "/assets/images/avatars/rev2.jpeg",
+   "",
+   "",
+   "",
+   "Sanyukta"
+  ],
+  [
+   "",
+   "rgb(253, 231, 239)",
+   "rgb(212, 53, 110)",
+   "S",
+   "Shruti"
+  ],
+  [
+   "",
+   "rgb(231, 240, 253)",
+   "rgb(58, 110, 204)",
+   "A",
+   "Amisha"
+  ]
+ ],
+ "chips": [
+  [
+   "/assets/images/chips/comfort.png",
+   "Comfort ",
+   "6"
+  ],
+  [
+   "/assets/images/chips/accuracy.png",
+   "Accuracy ",
+   "5"
+  ],
+  [
+   "/assets/images/chips/hot-tub.png",
+   "Hot tub ",
+   "5"
+  ],
+  [
+   "/assets/images/chips/condition.png",
+   "Condition ",
+   "4"
+  ],
+  [
+   "/assets/images/chips/hospitality.png",
+   "Hospitality ",
+   "8"
+  ],
+  [
+   "/assets/images/chips/cleanliness.png",
+   "Cleanliness ",
+   "4"
+  ],
+  [
+   "/assets/images/chips/amenities.png",
+   "Amenities ",
+   "2"
+  ],
+  [
+   "/assets/images/chips/decor.png",
+   "Decor ",
+   "2"
+  ],
+  [
+   "/assets/images/chips/indoor-spaces.png",
+   "Indoor spaces ",
+   "2"
+  ],
+  [
+   "/assets/images/chips/location.png",
+   "Location ",
+   "2"
+  ]
+ ],
+ "cats": [
+  [
+   "Cleanliness",
+   "5.0",
+   "spray"
+  ],
+  [
+   "Accuracy",
+   "5.0",
+   "checkCircle"
+  ],
+  [
+   "Check-in",
+   "5.0",
+   "key"
+  ],
+  [
+   "Communication",
+   "5.0",
+   "chat"
+  ],
+  [
+   "Location",
+   "4.8",
+   "map"
+  ],
+  [
+   "Value",
+   "4.8",
+   "tag"
+  ]
+ ],
+ "highlights": [
+  [
+   "outdoor",
+   "Outdoor entertainment",
+   "The pool and alfresco dining are great for summer trips."
+  ],
+  [
+   "fan",
+   "Designed for staying cool",
+   "Beat the heat with the A/C and ceiling fan."
+  ],
+  [
+   "door",
+   "Self check-in",
+   "You can check in with the building staff."
+  ]
+ ],
+ "know": [
+  [
+   "calendar",
+   "Cancellation policy",
+   [
+    "Free cancellation before 17 October. Cancel before check-in on 18 October for a partial refund.",
+    "Review this host’s full policy for details."
+   ]
+  ],
+  [
+   "key",
+   "House rules",
+   [
+    "Check-in after 2:00 pm",
+    "Checkout before 11:00 am",
+    "3 guests maximum"
+   ]
+  ],
+  [
+   "shield",
+   "Safety & property",
+   [
+    "Carbon monoxide alarm not reported",
+    "Smoke alarm not reported",
+    "Exterior security cameras on property"
+   ]
+  ]
+ ]
+}

@@ -1,0 +1,26 @@
+.place { font-size: 16px; margin-bottom: 24px; }
+.map { position: relative; border-radius: 12px; overflow: hidden; height: 480px; background: #e8eef0; }
+.tiles {
+  position: absolute; inset: 0;
+  background: radial-gradient(circle at 30% 40%, #cfe3c8 0 6%, transparent 6%), radial-gradient(circle at 70% 60%, #cfe3c8 0 8%, transparent 8%),
+    linear-gradient(115deg, #acd3e6 0 34%, #e9f0e4 34% 100%);
+}
+.tiles:before {
+  content: ""; position: absolute; inset: 0;
+  background-image: linear-gradient(90deg, rgba(180, 180, 170, 0.5) 1px, transparent 1px), linear-gradient(0deg, rgba(180, 180, 170, 0.35) 1px, transparent 1px);
+  background-size: 90px 90px, 90px 90px; opacity: 0.5;
+}
+.pin {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 56px; height: 56px; border-radius: 50%; background: var(--ink); color: #fff;
+  display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px #0000004d;
+}
+.pin svg { width: 26px; height: 26px; }
+.zoom { position: absolute; right: 12px; top: 12px; display: flex; flex-direction: column; gap: 8px; }
+.zoom button { width: 40px; height: 40px; border-radius: 8px; border: none; background: #fff; box-shadow: 0 2px 6px #0003; display: flex; align-items: center; justify-content: center; }
+.zoomIcon { width: 16px; height: 16px; }
+.search { position: absolute; left: 12px; top: 12px; width: 40px; height: 40px; border-radius: 50%; background: #fff; box-shadow: 0 2px 6px #0003; border: none; display: flex; align-items: center; justify-content: center; }
+.searchIcon { width: 16px; height: 16px; }
+.note { font-size: 14px; color: var(--ink); margin-top: 18px; }
+.subTitle { font-size: 18px; font-weight: 500; margin: 40px 0 12px; }
+.body { font-size: 15px; line-height: 1.5; }
+.more { margin-top: 18px; }

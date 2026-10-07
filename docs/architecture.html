@@ -1,0 +1,73 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#fff;color:#1d2433}
+.wrap{width:1600px;padding:32px;box-sizing:border-box}
+h1{font-size:28px;margin:0 0 4px} .sub{color:#5b6475;margin:0 0 24px;font-size:15px}
+.row{display:flex;gap:16px;margin-bottom:14px;align-items:stretch}
+.lane{flex:0 0 150px;display:flex;align-items:center;justify-content:center;border-radius:10px;font-weight:700;font-size:14px;color:#fff;text-align:center;padding:8px}
+.boxes{flex:1;display:flex;gap:12px}
+.b{flex:1;border:2px solid;border-radius:10px;padding:10px 12px;font-size:13px;line-height:1.4;background:#fff}
+.b h3{margin:0 0 4px;font-size:14px} .b p{margin:0;color:#3a4254}
+.arrow{text-align:center;color:#8a93a6;font-size:13px;margin:-6px 0 6px 166px}
+.c1{background:#3b6fd8}.c1b{border-color:#3b6fd8}
+.c2{background:#0f8f7e}.c2b{border-color:#0f8f7e}
+.c3{background:#7b4fd6}.c3b{border-color:#7b4fd6}
+.c4{background:#c9661a}.c4b{border-color:#c9661a}
+.c5{background:#c23b5a}.c5b{border-color:#c23b5a}
+.c6{background:#4b5566}.c6b{border-color:#4b5566}
+.notes{display:flex;gap:12px;margin-top:18px}.notes div{flex:1;background:#f4f6fa;border-radius:10px;padding:12px;font-size:13px;line-height:1.45}
+.notes b{display:block;margin-bottom:4px}
+</style></head><body><div class="wrap">
+<h1>Vacation-rental marketplace — production architecture</h1>
+<p class="sub">Read-heavy browse/search, write-critical booking & payments. Services scale independently; data is partitioned by ownership.</p>
+
+<div class="row"><div class="lane c1">Clients &amp; Edge</div><div class="boxes">
+<div class="b c1b"><h3>Web (Next.js SSR/ISR)</h3><p>Listing pages pre-rendered + revalidated on change; islands hydrate booking widget.</p></div>
+<div class="b c1b"><h3>iOS / Android</h3><p>Same public API via BFF; offline cache of trips.</p></div>
+<div class="b c1b"><h3>Global CDN + WAF</h3><p>Caches HTML/ISR, JS, images (AVIF/WebP resized on the fly). Bot &amp; DDoS protection.</p></div>
+<div class="b c1b"><h3>Image service</h3><p>Upload → object storage → async resize/transcode → CDN URLs.</p></div>
+</div></div>
+<div class="arrow">▼ HTTPS</div>
+
+<div class="row"><div class="lane c2">API layer</div><div class="boxes">
+<div class="b c2b"><h3>API Gateway / BFF</h3><p>Auth (OAuth2/JWT), rate limits, request shaping per client, GraphQL or REST.</p></div>
+<div class="b c2b"><h3>Service mesh</h3><p>mTLS, retries, timeouts, circuit breakers between services.</p></div>
+</div></div>
+<div class="arrow">▼ gRPC / REST</div>
+
+<div class="row"><div class="lane c3">Domain services (Kubernetes, autoscaled)</div><div class="boxes">
+<div class="b c3b"><h3>Listing</h3><p>Listings, photos, amenities, host edits.</p></div>
+<div class="b c3b"><h3>Search</h3><p>Geo + date + filters, ranking, personalisation.</p></div>
+<div class="b c3b"><h3>Availability &amp; Pricing</h3><p>Calendars, dynamic price, holds with TTL.</p></div>
+<div class="b c3b"><h3>Booking</h3><p>Saga: hold → pay → confirm; idempotency keys.</p></div>
+<div class="b c3b"><h3>Payments</h3><p>PSP integration, payouts, ledger (double-entry).</p></div>
+<div class="b c3b"><h3>Users / Reviews / Messaging</h3><p>Profiles, reviews, host–guest chat (WebSocket).</p></div>
+</div></div>
+<div class="arrow">▼ events (outbox pattern) &nbsp;&nbsp;|&nbsp;&nbsp; ▼ reads/writes</div>
+
+<div class="row"><div class="lane c4">Async &amp; Search</div><div class="boxes">
+<div class="b c4b"><h3>Event bus (Kafka)</h3><p>listing.updated, booking.confirmed, price.changed… partitioned by listing id.</p></div>
+<div class="b c4b"><h3>Search index (OpenSearch/Elasticsearch)</h3><p>Geo-sharded; near-real-time updates from CDC; availability bitmap per listing.</p></div>
+<div class="b c4b"><h3>Workers</h3><p>Notifications, email/SMS, image pipeline, ranking features, fraud scoring.</p></div>
+</div></div>
+
+<div class="row"><div class="lane c5">Storage</div><div class="boxes">
+<div class="b c5b"><h3>PostgreSQL (primary + read replicas)</h3><p>Bookings, payments, users. Sharded by region/user id; strong consistency for money and inventory.</p></div>
+<div class="b c5b"><h3>Redis cluster</h3><p>Sessions, hot listing cache, availability holds (TTL), rate-limit counters.</p></div>
+<div class="b c5b"><h3>Object storage (S3)</h3><p>Photos, documents; lifecycle to cold tiers.</p></div>
+<div class="b c5b"><h3>Data lake + warehouse</h3><p>CDC → lake → warehouse for analytics, pricing and ranking models.</p></div>
+</div></div>
+
+<div class="row"><div class="lane c6">Deploy &amp; Ops</div><div class="boxes">
+<div class="b c6b"><h3>CI/CD</h3><p>PR checks (types, tests, visual + a11y regression) → canary → progressive rollout; feature flags.</p></div>
+<div class="b c6b"><h3>Infrastructure as code</h3><p>Terraform; multi-AZ per region; active-active reads, region-pinned writes.</p></div>
+<div class="b c6b"><h3>Observability</h3><p>OpenTelemetry traces, metrics, logs; SLOs on search p95 and booking success.</p></div>
+<div class="b c6b"><h3>Security</h3><p>Secrets manager, PCI scope isolated to Payments, PII encryption at rest.</p></div>
+</div></div>
+
+<div class="notes">
+<div><b>Frontend scaling</b>Listing pages are ISR-cached at the CDN, so most page views never reach origin. Images are the largest payload: resized per viewport and served from the edge.</div>
+<div><b>Backend scaling</b>Stateless services scale horizontally on CPU/RPS. Booking uses a saga with idempotency keys so retries never double-book or double-charge.</div>
+<div><b>Storage scaling</b>Relational store for money and inventory (correctness first), sharded as volume grows; Redis absorbs hot reads; CDC feeds search and analytics without loading the primary.</div>
+<div><b>Search scaling</b>Index sharded by geography; queries hit only the relevant shards. Availability is pre-computed per listing so date filters don't require joins at query time.</div>
+</div>
+</div></body></html>

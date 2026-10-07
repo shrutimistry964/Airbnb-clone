@@ -1,0 +1,2 @@
+.columns { display: grid; grid-template-columns: minmax(0, 1fr) 372px; gap: 0 96px; align-items: stretch; }
+.left { min-width: 0; }

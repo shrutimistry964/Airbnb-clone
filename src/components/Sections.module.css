@@ -1,0 +1,7 @@
+/* Layout shared by the full-width sections below the two-column area, plus the section heading
+   (one class in the reference, ._XZmvOH, used by both these and the narrower ones in Overview). */
+.wide { border-top: 1px solid var(--line-soft); }
+.section { padding: 48px 0; border-top: 1px solid var(--line-soft); }
+.section:first-child { border-top: none; }
+.title { font-size: 22px; line-height: 26px; font-weight: 500; margin-bottom: 24px; }
+.titleTight { margin: 0; }
